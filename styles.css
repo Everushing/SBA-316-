@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+ #calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 400px; 
+    margin: 0 auto; 
+  }
+
+  
+  .calendar-day {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .calendar-day.selected {
+    background-color: #eee;
+  }
+
+
+/* Style the header row */
+.header-row {
+  display: flex;
+  justify-content: space-between; /* Distribute weekdays evenly */
+  background-color: #f0f0f0; /* Light background for header */
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Style the calendar rows */
+.calendar-row {
+  display: flex;
+  justify-content: space-between; /* Distribute dates evenly */
+  padding: 5px;
+}
+
+/* Style the date cells */
+.calendar-row div {
+  width: calc(100% / 7); /* Distribute cells evenly across the width */
+  text-align: center;
+  border: 1px solid #ddd; /* Add borders to cells */
+  padding: 5px;
+  cursor: pointer; /* Make cells clickable (optional) */
+}
+
+
+ 
+  #task-list-container {
+    margin-top: 20px;
+  }
+  
+  #task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #task-list li {
+    margin-bottom: 5px;
+  }
+  
+  #add-task-form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #add-task-form label {
+    width: 80px;
+  }
+  
+  #add-task-form input,
+  #add-task-form button {
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
