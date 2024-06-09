@@ -5,7 +5,6 @@ const addTaskForm = document.getElementById('add-task-form');
 
 
 function generateCalendar(selectedDate = new Date()) {
-    const calendarContainer = document.getElementById('calendar-container');
     calendarContainer.innerHTML = '';
   
     const month = selectedDate.getMonth();
